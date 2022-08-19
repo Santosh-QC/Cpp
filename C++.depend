@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1660917845 source:c:\dropbox\c++\c++\main.cpp
+	<iostream>
+	"person.h"
+	"brithday.h"
+
+1660215729 source:c:\dropbox\c++\c++\cpp_constructor.cpp
+
+1660219477 source:c:\dropbox\c++\c++\testclass.cpp
+	"testclass.h"
+	<iostream>
+
+1660219420 c:\dropbox\c++\c++\testclass.h
+
+1660741637 c:\dropbox\c++\c++\test.h
+
+1660741370 source:c:\dropbox\c++\c++\test.cpp
+	"test.h"
+	<iostream>
+
+1660751107 source:c:\dropbox\c++\c++\test1.cpp
+	"test1.h"
+	<iostream>
+
+1660752801 c:\dropbox\c++\c++\test1.h
+
+1660840189 c:\dropbox\c++\c++\sally.h
+
+1660842726 source:c:\dropbox\c++\c++\sally.cpp
+	"sally.h"
+	<iostream>
+
+1660912889 source:c:\dropbox\c++\c++\brithday.cpp
+	<iostream>
+	"brithday.h"
+
+1660917984 c:\dropbox\c++\c++\brithday.h
+
+1660915706 c:\dropbox\c++\c++\person.h
+	<string>
+	"brithday.h"
+
+1660918107 source:c:\dropbox\c++\c++\person.cpp
+	"person.h"
+	<iostream>
+
