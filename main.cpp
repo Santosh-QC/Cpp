@@ -431,3 +431,127 @@ int main(){
     san.printinfo();
 
 }
+// overloading
+#include "overloading.h"
+#include <iostream>
+using namespace std;
+
+int main(){
+    overloading a(34);
+    overloading b(21);
+    overloading c;
+
+    c = a+b;
+    cout << c.num << endl;
+
+};
+
+//inheritance, protected, private, public
+#include "mother.h"
+#include <iostream>
+#include "daughter.h"
+
+using namespace std;
+
+int main(){
+//    mother obj;
+//    obj.printname();
+
+    daughter obj1;
+    obj1.printsomething();
+
+}
+
+derived class constrictors and deconstructors
+
+#include "mother.h"
+#include <iostream>
+#include "daughter.h"
+
+using namespace std;
+
+int main(){
+    //mother obj;
+    daughter tina;
+
+}
+
+// polymorphism
+
+#include <iostream>
+
+using namespace std;
+
+class fighter{
+    protected:
+        int attackpower;
+    public:
+        void setattackpower(int a){
+        attackpower = a;
+        }
+};
+
+class ninja: public fighter{
+    public:
+        void attack()
+        {cout << "this is a ninja with attackpower - " << attackpower << endl;}
+
+};
+
+class animal: public fighter{
+    public:
+        void attack()
+        {
+            cout << "This is an animal with kill power - " << attackpower << endl;
+        }
+};
+
+int main(){
+    ninja n;
+    animal m;
+    fighter *enemy1 = &n;
+    fighter *enemy2 = &m;
+
+    enemy1->setattackpower(29);
+    enemy2->setattackpower(30);
+
+    n.attack();
+    m.attack();
+
+}
+
+// Virtual functions
+
+#include <iostream>
+using namespace std;
+
+class enemy{
+public:
+    void virtual attack(){
+        cout << "this is an attack base class" << endl;
+    }
+};
+
+class ninja: public enemy{
+public:
+    void virtual attack(){
+    cout << "this is ninja attack" << endl;}
+};
+
+class animal: public enemy{
+public:
+    void virtual attack(){
+    cout << "this is an animal attack" << endl;}
+};
+
+int main(){
+
+    ninja n;
+    animal m;
+
+    enemy *enemy1 = &n;
+    enemy *enemy2 = &m;
+
+    enemy1->attack();
+    enemy2->attack();
+}
