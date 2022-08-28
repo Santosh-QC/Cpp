@@ -693,3 +693,28 @@ int main(){
     datatype<float> obj3( 20.1);
 
 }
+
+//exception
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    try{
+        int x = 80;
+        int y = 90;
+
+        if (x < y){
+            throw 88;
+        }
+        else{
+            cout << " x is greater than y" << endl;
+        }
+    }
+
+    catch(int a){
+        cout << "error came up " << a << endl;
+    }
+
+}
