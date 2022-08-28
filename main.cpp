@@ -738,3 +738,18 @@ int main(){
     fileoject.close();
 
 }
+
+// reading from file
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main(){
+    ifstream fileobject("test.txt");
+    string text1;
+    while(fileobject >> text1){
+        cout << text1 << ' ' ;
+    }
+}
