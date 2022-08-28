@@ -666,3 +666,30 @@ int main(){
     cout << "greater number is : " << obj.greater() << endl;
 
 }
+
+//template specialization
+
+#include <iostream>
+using namespace std;
+
+template <class T>
+class datatype{
+public:
+    datatype(T x){
+    cout << x << " : is not a character." << endl;}
+
+};
+
+template<>
+class datatype<char>{
+public:
+    datatype(char x){
+    cout << x << " : is a character." << endl;}
+};
+
+int main(){
+    datatype<int> obj1( 7);
+    datatype<char> obj2( 'a');
+    datatype<float> obj3( 20.1);
+
+}
