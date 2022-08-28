@@ -796,3 +796,79 @@ int main(){
     }
 
 }
+
+//looping over a string
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string test{"This is a test C++ code"};
+    cout << test.substr(2,6) << endl;
+}
+
+//Swap string
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string a = "san";
+    string b = "man";
+    cout << a << b << endl;
+
+    a.swap(b);
+    cout << a << b << endl;
+}
+
+// string find and rfind
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string a1 = "ham is spam oh yes i am";
+    cout << a1.find("am") << endl;
+
+    cout << a1.rfind("am") << endl;
+}
+
+// string erase
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string a1 = "ham is spam oh yes i am";
+    cout << a1 << endl;
+
+    a1.erase(5);
+    cout << a1 << endl;
+}
+
+ // string replace
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string a1 = "ham is spam oh yes i am";
+    cout << a1 << endl;
+
+    a1.replace(7, 4, "scam");
+    cout << a1 << endl;
+}
+
+// string insert
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string a1 = "ham is spam oh yes i am";
+    cout << a1 << endl;
+
+    a1.insert(7, "scam ");
+    cout << a1 << endl;
+}
+
