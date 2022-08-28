@@ -718,3 +718,19 @@ int main(){
     }
 
 }
+
+// File handling
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+
+    ofstream fileoject;
+    fileoject.open("Test.txt");
+    fileoject << "This is a test string, going into test file \n";
+    fileoject.close();
+
+}
+
