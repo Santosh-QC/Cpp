@@ -753,3 +753,46 @@ int main(){
         cout << text1 << ' ' ;
     }
 }
+
+// string class and operations
+
+//using getline
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string test;
+    getline(cin, test);
+    cout << "printed line : " << test << endl;
+}
+
+//using copy
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string test;
+    string test1;
+    string test2;
+    getline(cin, test);
+
+    test1.assign(test);
+    test2.assign(test1);
+    cout << "printed line : " << test << test1 << test2 << endl;
+}
+
+//looping over a string
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string test;
+    getline(cin ,test);
+    for (int i=0; i<test.length(); i++){
+            cout << "printed line : " << test.at(i) << endl;
+    }
+
+}
