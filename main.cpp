@@ -555,3 +555,43 @@ int main(){
     enemy1->attack();
     enemy2->attack();
 }
+
+//Pure virtual function and abstract class
+
+#include <iostream>
+using namespace std;
+
+class enemy{
+public:
+    void virtual attackpower()=0;
+//    {
+//    cout << "this is the base class" << endl;
+//    }
+};
+
+class ninja: public enemy{
+public:
+    void virtual attackpower(){
+    cout << "this is ninja attack pwoer " << endl;}
+};
+
+class monster:public enemy{
+public:
+    void virtual attackpower()
+    {
+    cout << "this is monster attackpower " << endl;
+    }
+
+};
+
+int main(){
+    ninja n;
+    monster m;
+
+    enemy *enemy1 = &n;
+    enemy *enemy2 = &m;
+
+    enemy1->attackpower();
+    enemy2->attackpower();
+
+};
