@@ -727,10 +727,14 @@ using namespace std;
 
 int main(){
 
-    ofstream fileoject;
-    fileoject.open("Test.txt");
+    ofstream fileoject("Test.txt");
+    if (fileoject.is_open()){
+        cout << "file is in open state" << endl;
+    }
+    else{
+        cout << "something is wrong" << endl;
+    }
     fileoject << "This is a test string, going into test file \n";
     fileoject.close();
 
 }
-
