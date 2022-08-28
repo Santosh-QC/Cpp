@@ -619,3 +619,20 @@ int main(){
     cout << "the addition is : " << z << endl;
 
 };
+
+// function template with multiple paramters
+
+#include <iostream>
+using namespace std;
+
+template <class one, class two>
+one smaller(one a, two b)
+{
+    return (a>b?b:a);
+}
+
+int main(){
+    int a = 50;
+    float b = 10.9;
+    cout << "the smaller among the two numbers is : " << smaller(a,b) << endl;
+}
