@@ -636,3 +636,33 @@ int main(){
     float b = 10.9;
     cout << "the smaller among the two numbers is : " << smaller(a,b) << endl;
 }
+
+// class templates
+
+#include <iostream>
+
+using namespace std;
+
+template <class test>
+
+class testclass{
+    test first, second;
+public:
+    testclass (test a, test b){
+    first = a;
+    second = b;
+    }
+    test greater();
+};
+
+template <class test>
+test testclass<test>::greater(){
+    return (first>second?first:second);
+
+}
+
+int main(){
+    testclass<int> obj(10,20);
+    cout << "greater number is : " << obj.greater() << endl;
+
+}
