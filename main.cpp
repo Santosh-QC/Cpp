@@ -595,3 +595,27 @@ int main(){
     enemy2->attackpower();
 
 };
+
+// function templates
+
+#include <iostream>
+using namespace std;
+
+template <class calc>
+
+calc add(calc a, calc b)
+{
+    return a + b;
+}
+
+int main(){
+    int a,b,z;
+    cout << "enter the value of a : ";
+    cin >> a;
+    cout << "enter the value of b : ";
+    cin >> b;
+
+    z = add(a, b);
+    cout << "the addition is : " << z << endl;
+
+};
